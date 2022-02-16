@@ -9,11 +9,14 @@ Styling the body & the full document
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  width: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 body {
-  background-color: #333;
+  /* background-color: #333; */
+  width: 100%;
 }
 
 
@@ -29,7 +32,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 200px;
+  padding: 10px 20px;
 }
 
 .logo {
@@ -51,6 +54,7 @@ header {
   /* gap: 20px; */
   /* padding-left: 20px; */
 }
+
 .navigation a {
   text-decoration: none;
   padding: 0 20px;
@@ -65,17 +69,254 @@ header {
 */
 
 section {
-  padding: 100px 200px;
+  /* padding: 10px 20px; */
+  /* margin: 0%; */
 }
 
 .main {
+  padding: 100px 200px;
+  color: #e4620b;
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  background: url(/img/background.jpg) no-repeat;
   background: url(img/background.jpg) no-repeat;
-  background-position: cover;
+  background-size: 100%;
+  background-position: center;
   background-attachment: fixed;
-  
+}
+
+.main .social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.main h2 {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #d81010;
+  font-weight: 1000;
+}
+
+.main h3 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  color: #fff;
+  background-color: #fc1cb9;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9357em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  width: auto;
+  transition: 0.7s ease;
+}
+
+.main-btn:hover {
+  background-color: #5c0542;
+  transform: scale(1.1);
+}
+
+.social-icons {
+  color: #e4620b;
+  font-size: 1.7em;
+  width: auto;
+  /* padding-right: 20px; */
+}
+
+
+
+/* 
+  Styling the Services Area
+*/
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #fc1cb9;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin: 40px 0;
+}
+
+.cards {
+  background-color: rgb(233, 222, 207);
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: antiquewhite;
+  margin: 20px;
+  padding: 25px;
+  width: 21.25em;
+  box-shadow: -14px -7px 13px 7px rgb(167 41 76 / 39%);
+  border-radius: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #5c0542;
+  font-size: 8em;
+  font-weight: 200;
+  /* justify-content: center;
+  align-items: center;
+  align-content: center; */
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: #e0009d;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+/* 
+  Styling the Projects Area
+*/
+
+.projects {
+  background-color: rgb(14, 3, 59);
+}
+
+.projects .content {
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: rgb(238, 212, 212);
+  border: 1px solid gray;
+  min-height: 14em;
+  overflow: auto;
+  width: 23em;
+  margin: 10px;
+  border-radius: 10px;
+  transition: 0.7s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.project-image:hover {
+  opacity: 0.9;
+}
+
+.project-info {
+  padding: 1em;
+}
+
+.project-category {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+  font-weight: 800;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.more-details {
+  text-decoration: none;
+}
+
+.more-details:hover {
+  color: #e0009d;
+}
+
+
+/* 
+  Styling the Contents Area
+*/
+
+.contact {
+  background-color: #fff;
+  width: 100%;
+  min-height: auto;
+}
+
+.contact .icon {
+  font-size: 4em;
+}
+
+.contact .info h3 {
+  font-weight: 800;
+  color: #000;
+}
+
+.contact .info p {
+  font-size: 1.2em;
+}
+
+/* 
+  Styling the Footer
+*/
+
+.footer {
+  background-color: #02052c;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer-title span {
+  color: #5c0542;
+}
+
+.footer .social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.footer .social-icons a {
+  font-size: 1.3em;
 }
